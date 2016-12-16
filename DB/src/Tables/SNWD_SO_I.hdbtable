@@ -1,0 +1,17 @@
+column table SNWD_SO_I (
+     LOGSYS               NVARCHAR(10)         default '' not null,
+     NODE_KEY             VARBINARY(16)        default '' not null,
+     PARENT_KEY           VARBINARY(16)        default '' not null,
+     SO_ITEM_POS          NVARCHAR(10)         default '' not null,
+     PRODUCT_GUID         VARBINARY(16)        default '' not null,
+     NOTE_GUID            VARBINARY(16)        default '' not null,
+     CURRENCY_CODE        NVARCHAR(5)          default '' not null,
+     GROSS_AMOUNT         DECIMAL(15,2)        default 0 not null,
+     NET_AMOUNT           DECIMAL(15,2)        default 0 not null,
+     TAX_AMOUNT           DECIMAL(15,2)        default 0 not null,
+     ITEM_ATP_STATUS      NVARCHAR(1)          default '' not null,
+     OP_ITEM_POS          NVARCHAR(10)         default '' not null,
+     _DATAAGING           NVARCHAR(8)          default '00000000' not null,
+     DUMMY                NVARCHAR(1)          default '' not null,
+     primary key cpbtree (LOGSYS, NODE_KEY)
+  );

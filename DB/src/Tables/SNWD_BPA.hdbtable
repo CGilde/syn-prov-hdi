@@ -1,0 +1,20 @@
+column table SNWD_BPA (
+     LOGSYS               NVARCHAR(10)         default '' not null,
+     NODE_KEY             VARBINARY(16)        default '' not null,
+     BP_ROLE              NVARCHAR(3)          default '' not null,
+     EMAIL_ADDRESS        NVARCHAR(255)        default '' not null,
+     PHONE_NUMBER         NVARCHAR(30)         default '' not null,
+     FAX_NUMBER           NVARCHAR(30)         default '' not null,
+     WEB_ADDRESS          NVARCHAR(255)        default '' not null,
+     ADDRESS_GUID         VARBINARY(16)        default '' not null,
+     BP_ID                NVARCHAR(10)         default '' not null,
+     COMPANY_NAME         NVARCHAR(80)         default '' not null,
+     LEGAL_FORM           NVARCHAR(10)         default '' not null,
+     CREATED_BY           VARBINARY(16)        default '' not null,
+     CREATED_AT           DECIMAL(21,7)        default 0 not null,
+     CHANGED_BY           VARBINARY(16)        default '' not null,
+     CHANGED_AT           DECIMAL(21,7)        default 0 not null,
+     CURRENCY_CODE        NVARCHAR(5)          default '' not null,
+     DUMMY_FIELD_BPA      NVARCHAR(1)          default '' not null,
+     primary key cpbtree (LOGSYS, NODE_KEY)
+  );

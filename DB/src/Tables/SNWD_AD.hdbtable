@@ -1,0 +1,15 @@
+column table SNWD_AD (
+     LOGSYS               NVARCHAR(10)         default '' not null,
+     NODE_KEY             VARBINARY(16)        default '' not null,
+     CITY                 NVARCHAR(40)         default '' not null,
+     POSTAL_CODE          NVARCHAR(10)         default '' not null,
+     STREET               NVARCHAR(60)         default '' not null,
+     BUILDING             NVARCHAR(10)         default '' not null,
+     COUNTRY              NVARCHAR(3)          default '' not null,
+     ADDRESS_TYPE         NVARCHAR(2)          default '' not null,
+     VAL_START_DATE       NVARCHAR(8)          default '00000000' not null,
+     VAL_END_DATE         NVARCHAR(8)          default '99991231' not null,
+     LATITUDE             DECIMAL(15,12)       default 0 not null,
+     LONGITUDE            DECIMAL(15,12)       default 0 not null,
+     primary key cpbtree (LOGSYS, NODE_KEY)
+  );

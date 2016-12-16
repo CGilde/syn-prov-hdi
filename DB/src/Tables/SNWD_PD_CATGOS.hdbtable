@@ -1,0 +1,6 @@
+column table SNWD_PD_CATGOS (
+     LOGSYS               NVARCHAR(10)         default '' not null,
+     CATEGORY             NVARCHAR(40)         default '' not null,
+     MAIN_CATEGORY        NVARCHAR(40)         default '' not null,
+     primary key cpbtree (LOGSYS, CATEGORY)
+  );

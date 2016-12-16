@@ -1,0 +1,21 @@
+_schema-version: '2.0'
+ID: syn-prov-hdi
+version: 0.0.1
+
+modules:
+ - name: DB
+   type: hdb
+   path: DB
+   requires:
+    - name: hdi-container
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name}  
+
+resources:
+ - name: hdi-container
+   type: com.sap.xs.hdi-container
+   properties:
+      hdi-container-name: ${service-name}
+
+
+

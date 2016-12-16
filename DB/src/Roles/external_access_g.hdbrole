@@ -1,0 +1,42 @@
+{
+  "role": {
+    "name": "EPM_XXX::external_access_g#",
+    "object_privileges": [
+      {
+        "name":"SNWD_AD",
+        "type":"TABLE",
+        "privileges_with_grant_option":[ "SELECT" ]
+      },
+      {
+        "name":"SNWD_BPA",
+        "type":"TABLE",
+        "privileges_with_grant_option":[ "SELECT" ]
+      },
+      {
+        "name":"SNWD_PD",
+        "type":"TABLE",
+        "privileges_with_grant_option":[ "SELECT" ]
+      },
+      {
+        "name":"SNWD_PD_CATGOS",
+        "type":"TABLE",
+        "privileges_with_grant_option":[ "SELECT" ]
+      },
+      {
+        "name":"SNWD_SO",
+        "type":"TABLE",
+        "privileges_with_grant_option":[ "SELECT" ]
+      },
+      {
+        "name":"SNWD_SO_I",
+        "type":"TABLE",
+        "privileges_with_grant_option":[ "SELECT" ]
+      },
+      {
+        "name":"SNWD_SO_SL",
+        "type":"TABLE",
+        "privileges_with_grant_option":[ "SELECT" ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+column table SNWD_SO_SL (
+     LOGSYS               NVARCHAR(10)         default '' not null,
+     NODE_KEY             VARBINARY(16)        default '' not null,
+     PARENT_KEY           VARBINARY(16)        default '' not null,
+     QUANTITY             DECIMAL(13,3)        default 0 not null,
+     QUANTITY_UNIT        NVARCHAR(3)          default '' not null,
+     DELIVERY_DATE        DECIMAL(21,7)        default 0 not null,
+     _DATAAGING           NVARCHAR(8)          default '00000000' not null,
+     primary key cpbtree (LOGSYS, NODE_KEY)
+  );

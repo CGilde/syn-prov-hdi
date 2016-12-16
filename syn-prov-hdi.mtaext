@@ -1,0 +1,10 @@
+_schema-version: '2.0'
+ID: syn-prov-hdi-mtaext
+extends: syn-prov-hdi
+
+resources:
+  - name: hdi-container
+    parameters:
+      service-name: to_be_replaced_before_deploy
+      config:   
+        schema: to_be_replaced_before_deploy
