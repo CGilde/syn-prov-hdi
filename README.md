@@ -1,7 +1,7 @@
 #HDI Container for synonym access from another HDI Containter
 
 ## Content
-Eight tables taken from SAP Netweaver EPM Conten (Sales Order Model)
+Eight tables taken from SAP Netweaver EPM Content (Sales Order Model)
 
 ##How to build schema
 1. clone the repo to DevX (XSA WebIDE)
